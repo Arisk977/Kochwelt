@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt - Kochwelt-342</title>
+  <link rel="icon" type="image/x-icon" href="./img/logo_small.webp">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="grey-bg">
+  <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
+  <header class="content-limiter">
+      <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+      <nav>
+          <a class="navigation-bar" href="./index.html">Start </a>
+          <a class="navigation-bar" href="./nudelauflauf.html">Rezept des Tages </a>
+          <a class="navigation-bar" id="start" href="./contact.html">Kontakt </a>
+          <a class="navigation-bar" href="./impressum.html">Impressum </a>
+          <button id="menu-button" onclick="toggleRespMenu()"><img id="burger-bar" src="./img/burger-bar.png"
+                  alt="burger-bar"></button>
+      </nav>
+  </header>
+
+  <main id="main" class="content-limiter contact-main" tabindex="-1">
+    <div id="menu" class="resp-menu">
+      <a href="./index.html">Start </a>
+      <a href="./nudelauflauf.html">Rezept des Tages </a>
+      <a href="./contact.html">Kontakt </a>
+      <a href="./impressum.html">Impressum </a>
+  </div>
+    <section class="contact">
+      <div class="contact-content">
+        <h1>Kontaktiere uns</h1>
+        <form onsubmit="sendMail(event)">
+          <label for="name">
+            Dein Name:
+            <input type="text" name="name" id="name" placeholder="Nenne uns deinen Namen." required>
+          </label>
+          <label for="email">
+            Deine E-Mail:
+            <input type="email" name="email" id="email" placeholder="Wie können wir mit dir Kontakt aufnehmen?" required>
+          </label>
+          <label for="message">
+            Deine Nachricht:
+            <textarea name="message" id="message" maxlength="2048" placeholder="Was möchtest du uns mitteilen?"
+              rows="10" cols="50" required></textarea>
+          </label>
+          <button class="green-button" type="submit">Abschicken</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="content-limiter">
+    <img src="./img/white_logo.png" alt="Kochwelt Logo">
+    <div class="socialmedia">
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="./img/instagram_icon.webp" alt="Instagram"></a>
+
+      <a href="https://www.facebook.com/" target="_blank">
+        <img src="./img/facebook_icon.webp" alt="Facebook"></a>
+
+      <a href="https://www.youtube.com/" target="_blank">
+        <img src="./img/youtube.webp" alt="Youtube"></a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startseite - Kochwelt-342</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo_small.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
+    <header class="content-limiter">
+        <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+            <nav>
+                <a class="navigation-bar" id="start" href="./index.html">Start </a>
+                <a class="navigation-bar" href="./nudelauflauf.html">Rezept des Tages </a>
+                <a class="navigation-bar"  href="./contact.html">Kontakt </a>
+                <a class="navigation-bar" href="./impressum.html">Impressum </a>
+                <button id="menu-button" onclick="toggleRespMenu()"><img id="burger-bar" src="./img/burger-bar.png"
+                        alt="burger-bar"></button>
+            </nav>
+        
+    </header>
+
+    <main id="main" tabindex="-1">
+        <div id="menu" class="resp-menu">
+            <a href="./index.html">Start </a>
+            <a href="./nudelauflauf.html">Rezept des Tages </a>
+            <a href="./contact.html">Kontakt </a>
+            <a href="./impressum.html">Impressum </a>
+        </div>
+        <section id="rezept-des-tages" class="content-limiter">
+            <img class="rezept-des-tages-img" src="./img/pasta_casserole.webp" alt="Foto eines Nudelauflaufs">
+            <div class="rezept-des-tages-text-area">
+                <article class="rezept-des-tages-text">
+                    <hr class="horizontal-ruler">
+                    <h2>Nudelauflauf</h2>
+                    <p>Entdecken Sie heute einen herzhaften Genuss: Unseren Nudelauflauf! Diese köstliche Kombination
+                        aus al dente gekochten Penne, saftigem Hackfleisch und einer cremigen Paprika-Tomatensauce wird
+                        Sie begeistern. Mit einem Hauch von Rosmarin und einer pikanten Note durch Chilisauce ist dieses
+                        Gericht der perfekte Seelenwärmer für einen gemütlichen Abend.</p>
+                </article>
+                <button class="green-button" onclick="location.href = './nudelauflauf.html'">Rezept öffnen</button>
+            </div>
+        </section>
+
+        <section id="eigene-rezepte" class="content-limiter">
+            <h2 class="text-center">Lust auf was Neues?</h2>
+            <div class="flexbox">
+                <a class="rezept" href="./rezeptboerek.html"><img src="./img/börek.webp" alt="Foto mit börek">Türkische
+                    Spezialität - Börek
+                </a>
+                <a class="rezept" href="./rezeptaris.html"><img src="./img/1chili-con-carne-378952_1920.webp"
+                        alt="Foto einer Chili con Carne">Chili con Carne
+                </a>
+                <a class="rezept" href="./rezeptmartin.html"><img src="./img/blueberry-muffins.webp"
+                        alt="Foto mit Blaubeer Muffins">Blaubeer Muffins
+                </a>
+            </div>
+        </section>
+
+        <section class="newsletter-headline content-limiter" id="newsletter">
+            <h2>Olivenöl vs. Butter - Welches Fett ist besser zum Kochen?</h2>
+            <div class="newsletter-box">
+                <div class="newsletter-text">
+                    <p>Olivenöl und Butter sind zwei der beliebtesten Fette in der Küche, aber welches ist besser zum
+                        Kochen? Die Antwort hängt von deinem Gericht und deinen Vorlieben ab. <br>
+                        <br>
+                        Olivenöl ist reich an ungesättigten Fettsäuren und hat einen hohen Rauchpunkt, was es ideal für
+                        das Braten und Sautieren macht. Es verleiht Gerichten einen milden, fruchtigen Geschmack und ist
+                        besonders in der mediterranen Küche beliebt.<br>
+                        <br>
+                        Butter hingegen bringt ein reiches, cremiges Aroma in deine Gerichte und eignet sich perfekt zum
+                        Backen und für Saucen. Sie hat jedoch einen niedrigeren Rauchpunkt, weshalb sie bei hohen
+                        Temperaturen schneller verbrennt. Eine kleine Prise Salz oder Kräuterbutter kann deinem Gericht
+                        einen besonderen Kick geben.<br>
+                        <br>
+                        Fazit: Beide Fette haben ihre Vorzüge. Für eine leichte, gesunde Küche ist Olivenöl oft die
+                        bessere Wahl, während Butter bei herzhaften, aromatischen Speisen punktet. Am besten, du hast
+                        beides in deiner Küche - je nachdem, worauf du gerade Lust hast!
+                    </p>
+
+                </div>
+                <img src="./img/olive-oil.webp" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer class="content-limiter">
+        <img src="./img/white_logo.png" alt="Kochwelt Logo">
+        <div class="socialmedia">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="./img/instagram_icon.webp" alt="Instagram"></a>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="./img/facebook_icon.webp" alt="Facebook"></a>
+
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="./img/youtube.webp" alt="Youtube"></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Börek - Kochwelt-342</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo_small.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
+    <header class="content-limiter">
+        <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+        <nav>
+            <a class="navigation-bar" id="start" href="./index.html">Start </a>
+            <a class="navigation-bar" href="./nudelauflauf.html">Rezept des Tages </a>
+            <a class="navigation-bar" href="./contact.html">Kontakt </a>
+            <a class="navigation-bar" href="./impressum.html">Impressum </a>
+            <button id="menu-button" onclick="toggleRespMenu()"><img id="burger-bar" src="./img/burger-bar.png"
+                    alt="burger-bar"></button>
+        </nav>
+    </header>
+
+    <main id="main" class="content-limiter" tabindex="-1">
+        <div id="menu" class="resp-menu">
+            <a href="./index.html">Start </a>
+            <a href="./nudelauflauf.html">Rezept des Tages </a>
+            <a href="./contact.html">Kontakt </a>
+            <a href="./impressum.html">Impressum </a>
+        </div>
+
+        <section class="rezept-section">
+            <h1 class="rezept-titel">Türkische Spezialität - Börek</h1>
+            <img class="rezept-bild" src="./img/börek.webp" alt="Foto mit börek">
+
+            <div class="icons">
+                <div class="icons-container"><img src="./img/icons/clock-regular.svg" alt="Zeit"><span>40 Min.</span>
+                </div>
+                <div class="icons-container"><img src="./img/icons/brain-solid.svg"
+                        alt="Schwierigkeitsgrad"><span>simpel</span></div>
+                <div class="icons-container"><img src="./img/icons/calendar-alt-regular.svg"
+                        alt="Datum"><span>05.09.2020</span></div>
+            </div>
+
+        </section>
+
+        <section class="table-container">
+            <hr class="horizontal-ruler">
+            <div class="portionen-container">
+                <form>
+                    <label for="inputfield"> Zutaten für
+                        <input id="inputfield" type="number" value="1" required min="1" max="20"></label>
+                    <button class="green-button" onclick="calc('BOEREK', event)">Portionen</button>
+                </form>
+            </div>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td>6</td>
+
+                        <td>Blatt Yufka-Teig</td>
+                    </tr>
+                    <tr>
+                        <td>600</td>
+
+                        <td>g Spinat, frisch oder TK</td>
+                    </tr>
+                    <tr>
+                        <td>300</td>
+
+                        <td>ml Milch</td>
+                    </tr>
+                    <tr>
+                        <td>400</td>
+
+                        <td>g Schafskäse</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+
+                        <td>Eier</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+
+                        <td>etwas Salz und Pfeffer</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+
+                        <td>Butter oder Öl für die Auflaufform</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="naehrwert-container">
+            <h3>Nährwerte für die gewählte Anzahl an Portionen</h3>
+            <hr class="horizontal-ruler" id="mediaquery-column">
+            <div class="naehrwert-area">
+                <div class="naehrwert-paar">
+                    <b>Brennwert</b>
+                    <div class="nutritional-value"><span>1578,2</span> kcal</div>
+                </div>
+                <hr class="vertikaler-trenner">
+                <div class="naehrwert-paar">
+                    <b>Eiweiß</b>
+                    <div class="nutritional-value"><span>59,1</span> g</div>
+                </div>
+                <hr class="vertikaler-trenner">
+                <div class="naehrwert-paar">
+                    <b>Fett</b>
+                    <div class="nutritional-value"><span>70,3</span> g</div>
+                </div>
+                <hr class="vertikaler-trenner">
+                <div class="naehrwert-paar">
+                    <b>Kohlenhydrate</b>
+                    <div class="nutritional-value"><span>167</span> g</div>
+                </div>
+            </div>
+            <hr class="horizontal-ruler">
+        </section>
+
+        <section class="zubereitung-container">
+            <h2>Zubereitung</h2>
+            <div class="icons">
+                <div class="icons-container">
+                    <img src="./img/icons/clock-regular.svg" alt="Zeit"><span> ca. 15 Minuten</span>
+                </div>
+
+                <div class="icons-container">
+                    <img src="./img/icons/clock-regular.svg" alt="Zeit"><span> Gesamtzeit ca. 40 Minuten</span>
+                </div>
+            </div>
+
+            <p> Backofen auf 200 °C Ober-/Unterhitze (Umluft: 180 °C) vorheizen. Um den Yufka-Teig vorzubereiten, ziehst
+                du
+                die Blätter einzeln ab und faltest sie komplett auseinander. Anschließend übereinander auf die
+                Arbeitsfläche
+                legen. <br><br>
+                Einen Kochtopf aufsetzen, einen Schluck Wasser hineingeben und den Spinat darin garen, entweder nach
+                Packungsanleitung oder bis er zusammengefallen ist. Milch mit Öl und Eiern in einer Schüssel verquirlen
+                und
+                mit Salz und Pfeffer würzen. Schafskäse in Scheiben schneiden. Auflaufform einfetten und das erste
+                Teigblatt
+                hineinlegen.<br>
+                <br>
+                Unser Tipp: Der Teig wird beim Börek nicht mit wissenschaftlicher Präzision geschichtet, sondern
+                schön unordentlich in die Auflaufform gepackt. So kann die Milchmischung sich überall gut verteilen und
+                das
+                Börek-Gericht schön saftig machen.<br><br>
+
+                Restliche Flüssigkeit aus dem Spinat abgießen und vom Herd nehmen. Nun etwas von der Milchmischung in
+                die
+                Auflaufform geben und auf den Teig verstreichen. Dann etwas Spinat und Schafskäse darauf verteilen. Das
+                Blatt unordentlich zusammenfalten. Mach das einfach so, wie du es für richtig empfindest - es gibt keine
+                falsche Vorgehensweise. Wiederhole den Schritt, bis die Teigblätter aufgebraucht sind.<br><br>
+                Falte nun Teigstücke, die über den Rand der Auflaufform hinausgehen, in die Mitte ein. Gib noch ein
+                bisschen
+                Milchmischung darüber und schiebe das Börek für 25 Minuten in den Backofen. Herausnehmen, abkühlen
+                lassen
+                und
+                direkt servieren.
+            </p>
+
+            <h3>Rezept erstellt von</h3>
+            <div class="profile">
+                <img src="./img/ProfileAris.webp" alt="Profil-Bild">Aris
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+    <footer class="content-limiter">
+        <img src="./img/white_logo.png" alt="Kochwelt Logo">
+        <div class="socialmedia">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="./img/instagram_icon.webp" alt="Instagram"></a>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="./img/facebook_icon.webp" alt="Facebook"></a>
+
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="./img/youtube.webp" alt="Youtube"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1098 @@
+/* raleway-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/raleway-v34-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: url('./fonts/raleway-v34-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('./fonts/raleway-v34-latin-regular.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('./fonts/raleway-v34-latin-regular.woff') format('woff'),
+        /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+        url('./fonts/raleway-v34-latin-regular.ttf') format('truetype'),
+        /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('./fonts/raleway-v34-latin-regular.svg#Raleway') format('svg');
+    /* Legacy iOS */
+}
+
+/* raleway-italic - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: italic;
+    font-weight: 400;
+    src: url('./fonts/raleway-v34-latin-italic.eot');
+    /* IE9 Compat Modes */
+    src: url('./fonts/raleway-v34-latin-italic.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('./fonts/raleway-v34-latin-italic.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('./fonts/raleway-v34-latin-italic.woff') format('woff'),
+        /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+        url('./fonts/raleway-v34-latin-italic.ttf') format('truetype'),
+        /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('./fonts/raleway-v34-latin-italic.svg#Raleway') format('svg');
+    /* Legacy iOS */
+}
+
+/* raleway-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/raleway-v34-latin-700.eot');
+    /* IE9 Compat Modes */
+    src: url('./fonts/raleway-v34-latin-700.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('./fonts/raleway-v34-latin-700.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('./fonts/raleway-v34-latin-700.woff') format('woff'),
+        /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+        url('./fonts/raleway-v34-latin-700.ttf') format('truetype'),
+        /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('./fonts/raleway-v34-latin-700.svg#Raleway') format('svg');
+    /* Legacy iOS */
+}
+
+/* raleway-700italic - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: italic;
+    font-weight: 700;
+    src: url('./fonts/raleway-v34-latin-700italic.eot');
+    /* IE9 Compat Modes */
+    src: url('./fonts/raleway-v34-latin-700italic.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('./fonts/raleway-v34-latin-700italic.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('./fonts/raleway-v34-latin-700italic.woff') format('woff'),
+        /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+        url('./fonts/raleway-v34-latin-700italic.ttf') format('truetype'),
+        /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('./fonts/raleway-v34-latin-700italic.svg#Raleway') format('svg');
+    /* Legacy iOS */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.content-limiter {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+/* header */
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.323);
+}
+
+nav {
+    padding-bottom: 10px;
+}
+
+nav a {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.125s;
+}
+
+#start {
+    color: #008000;
+    text-decoration: underline #008000;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 10px;
+}
+
+#rezept-underline {
+    color: #008000;
+    text-decoration: underline #008000;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 10px;
+}
+
+nav a:hover,
+#menu a:hover,
+nav a:focus,
+#menu a:focus {
+    color: #008000;
+    text-decoration: underline #008000;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 10px;
+}
+
+header img {
+    width: 250px;
+}
+
+#burger-bar {
+    visibility: hidden;
+    height: 60px;
+    width: auto;
+    cursor: pointer;
+}
+
+#menu-button {
+    background-color: white;
+    border: none;
+    display: none;
+}
+
+
+#menu {
+    height: auto;
+    width: 200px;
+    background-color: rgba(245, 222, 179, 0.920);
+    border: 3px rgba(72, 53, 53, 0.609) solid;
+    border-radius: 6px;
+    position: absolute;
+    padding: 10px;
+    top: 0px;
+    right: 0;
+    transition: all 0.125s;
+}
+
+.resp-menu {
+    visibility: hidden;
+    transform: translateX(140%);
+    transition: all 0.125s;
+}
+
+#menu a {
+    margin: 10px;
+    margin-left: 18px;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: 0.125s;
+}
+
+/* section 1 */
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* img{width: 100px;} */
+
+#rezept-des-tages {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.rezept-des-tages-img {
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.rezept-des-tages-text-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rezept-des-tages-text h2 {
+    margin-top: 0;
+}
+
+.rezept-des-tages-text p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+article hr {
+    visibility: hidden;
+    position: absolute;
+}
+
+/* section 2 */
+.text-center {
+    text-align: center;
+}
+
+#eigene-rezepte {
+    padding-top: 32px;
+    padding-bottom: 102px;
+    background-color: #EFEFEF;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.rezept {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    height: 200px;
+
+}
+
+.rezept:hover,
+.rezept:focus {
+    color: #008000;
+}
+
+.rezept img {
+    height: 200px;
+    width: 90%;
+    border-radius: 20px;
+    transition: 0.125s;
+    object-fit: cover;
+}
+
+.rezept:hover img,
+.rezept:focus img {
+    filter: brightness(123%);
+}
+
+/* section3 */
+.newsletter-headline {
+    padding-bottom: 20px;
+}
+
+.newsletter-headline h2 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.newsletter-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 60px;
+}
+
+.newsletter-text {
+    font-size: 16px;
+}
+
+.newsletter-box img {
+    width: auto;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/*Footer Section*/
+
+footer {
+    background-color: #403B3B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer img {
+    width: 200px;
+
+
+}
+
+.socialmedia {
+    gap: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.socialmedia img {
+    width: 40px;
+    gap: 20px;
+    flex-wrap: nowrap;
+    transition: 0.125s;
+}
+
+.socialmedia a:hover,
+.socialmedia a:focus {
+    filter: brightness(123%);
+    transform: scale(1.1);
+}
+
+
+/*Rezept Section einheitlich*/
+
+.rezept-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.rezept-titel {
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+.rezept-bild {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 22px;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.icons img {
+    width: 18px;
+    margin-right: 8px;
+}
+
+.icons-container {
+    background-color: #EFEFEF;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.horizontal-ruler {
+    color: #EFEFEF;
+    border-style: solid;
+
+}
+
+.table-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.portionen-container {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+
+.portionen-container input {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    margin-right: -6px;
+    margin-left: 20px;
+    border: 1px solid;
+    border-color: #00000038;
+    border-radius: 4px;
+    font-family: "Raleway", sans-serif;
+}
+
+.green-button {
+    color: white;
+    background-color: #008000;
+    border: none;
+    font-size: 18px;
+    width: 200px;
+    height: 44px;
+    transition: 0.125s;
+    border-radius: 4px;
+    font-family: "Raleway", sans-serif;
+}
+
+.green-button:hover,
+.green-button:focus {
+    cursor: pointer;
+    filter: brightness(123%);
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    margin-top: 16px;
+}
+
+tr:nth-child(odd) td {
+    background: #EFEFEF;
+}
+
+tr td:first-child {
+    text-align: end;
+    width: 65px;
+    white-space: nowrap;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+tr td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+td {
+    padding: 14px 2px;
+}
+
+section {
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.zubereitung-container h2 {
+    text-align: start;
+
+}
+
+
+.profile {
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+
+
+
+
+/* contact */
+.contact-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.323);
+    padding: 20px 30px;
+}
+
+.grey-bg {
+    background-color: #EFEFEF;
+}
+
+.contact-content h1 {
+    margin: 10px 0 20px 0;
+    padding-bottom: 10px;
+    width: fit-content;
+    text-transform: uppercase;
+    color: black;
+    border-bottom: 3px solid black;
+}
+
+.contact-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-content label {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-content input {
+    border-radius: 10px;
+
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all 0.125s;
+    border: 2px solid #EFEFEF;
+    font-family: "Raleway", sans-serif;
+}
+
+.contact-content textarea {
+    border-radius: 10px;
+    resize: none;
+    min-height: 50px;
+    padding: 10px;
+    border-width: 2px;
+    transition: all 0.125s;
+    border-color: #EFEFEF;
+    border-style: solid;
+    font-family: "Raleway", sans-serif;
+}
+
+.contact-content input:focus,
+.contact-content textarea:focus {
+    border-color: #403B3B;
+}
+
+.contact-content .green-button {
+    align-self: center;
+}
+
+.impressum {
+    margin-bottom: 32px;
+}
+
+.impressum a {
+    color: green;
+}
+
+.impressum a:hover,
+.impressum a:focus {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* naehrwert */
+.naehrwert-area {
+    display: flex;
+}
+
+
+.naehrwert-paar {
+    display: flex;
+    flex-direction: column;
+    text-wrap: nowrap;
+    width: 120px;
+}
+
+#mediaquery-column{
+    visibility: hidden;
+    position: absolute;
+}
+
+.vertikaler-trenner {
+    color: #EFEFEF;
+    border-style: solid;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.skip-to-main-content-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    opacity: 0;
+}
+
+.skip-to-main-content-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+/*Responsive*/
+
+/* min-widths */
+@media (min-width: 1680px) {
+    .content-limiter {
+        padding-left: calc((100% - 1440px) / 2);
+        padding-right: calc((100% - 1440px) / 2);
+    }
+}
+
+@media (min-width: 851px) {
+    #menu {
+        visibility: hidden;
+    }
+}
+
+
+/* max-widths */
+/*header*/
+@media (max-width:1200px) {
+    .navigation-bar {
+        font-size: 20px;
+    }
+
+    header img {
+        width: 200px;
+    }
+
+}
+
+@media (max-width:1025px) {
+    .navigation-bar {
+        font-size: 18px;
+    }
+
+    header img {
+        width: 180px;
+    }
+}
+
+@media (max-width: 1000px) {
+  
+    .rezept{
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width:963px) {
+    .navigation-bar {
+        font-size: 16px;
+    }
+
+    header img {
+        width: 160px;
+    }
+
+    .rezept img{
+        height: 150px;
+    }
+}
+
+@media (max-width:903px) {
+    .navigation-bar {
+        font-size: 14px;
+    }
+
+    header img {
+        width: 140px;
+    }
+
+}
+
+
+@media (max-width:850px) {
+    header img {
+        width: 200px;
+    }
+
+    #menu-button {
+        display: initial;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    #burger-bar {
+        visibility: visible;
+    }
+
+    .rezept {
+        margin-bottom: 18px;
+        width: 350px;
+    }
+
+    .rezept img{
+        height: 200px;
+    }
+
+    .flexbox {
+        flex-direction: column;
+        padding-top: 32px;
+    }
+
+    #rezept-des-tages {
+        flex-direction: column;
+    }
+
+    .rezept-des-tages-text-area {
+        align-items: center;
+    }
+
+    
+    .rezept-des-tages-text h2 {
+        text-align: center;
+    }
+    
+    .rezept-des-tages-img {
+        height: auto;
+    }
+
+    .rezept-des-tages-text p {
+        margin-bottom: 20px;
+    }
+
+
+    article hr {
+        visibility: visible;
+        position: relative;
+    }
+
+    .newsletter-box {
+        flex-direction: column-reverse;
+        gap: 0px;
+
+    }
+
+    .newsletter-text {
+        margin-top: 8px;
+    }
+}
+
+@media(max-width:810px) {
+    .content-limiter {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+}
+
+@media(max-width:750px) {
+
+    .content-limiter {
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+
+    .rezept-section {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .table-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .naehrwert-paar b {
+        font-size: 14px;
+    }
+
+    .nutritional-value {
+        font-size: 14px;
+    }
+}
+
+
+@media(max-width:636px) {
+
+    .content-limiter {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+@media (max-width:600px) {
+
+
+    #burger-bar {
+        height: 50px;
+    }
+}
+
+@media (max-width:570px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .green-button {
+        font-size: 14px;
+    }
+
+    .portionen-container {
+        font-size: 14px;
+    }
+
+    .portionen-container input {
+        font-size: 14px;
+    }
+
+    .portionen-container form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+
+    tr td:first-child {
+        width: 36px;
+    }
+}
+
+@media (max-width: 500px) {
+    .rezept {
+        width: 300px;
+    }
+
+    .icons span {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:476px) {
+    footer img {
+        width: 160px;
+    }
+
+    .socialmedia img {
+        width: 35px;
+
+    }
+}
+
+@media(max-width:469px) {
+    .content-limiter {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .rezept-section {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .icons img {
+        width: 13px;
+        margin-right: 5px;
+    }
+
+    .table-container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    td {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    tr td {
+        font-size: 14px;
+    }
+
+    .icons {
+        gap: 10px;
+    }
+
+    .icons-container {
+        padding: 6px;
+    }
+
+
+    /* contact */
+    .contact {
+        width: 300px;
+    }
+
+    .contact-content label {
+        font-size: 16px;
+    }
+
+    .contact-content input {
+        font-size: 14px;
+    }
+
+    .contact-content textarea {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:421px) {
+    footer img {
+        width: 140px;
+    }
+
+    .socialmedia img {
+        width: 30px;
+    }
+
+    .naehrwert-area{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #mediaquery-column{
+        visibility: visible;
+        position: relative;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:400px) {
+    .impressum {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:390px) {
+    .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width:380px) {
+
+    .newsletter-text {
+        font-size: 14px;
+    }
+
+    .newsletter-box img {
+        height: 180px;
+    }
+}
+
+@media(max-width:376px) {
+
+    section {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .icons-container span {
+        font-size: 14px;
+    }
+
+    td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .rezept {
+        width: 250px;
+    }
+}
+
+@media(max-width:370px) {
+    .contact {
+        width: 260px;
+    }
+
+    .contact-content label {
+        font-size: 14px;
+    }
+
+    .contact-content input {
+        font-size: 12px;
+    }
+
+    .contact-content textarea {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:360px) {
+    footer img {
+        width: 120px;
+    }
+
+    .socialmedia img {
+        width: 25px;
+    }
+}
+
+@media (max-width:340px) {
+    .newsletter-box img {
+        height: 160px;
+    }
+
+    .contact {
+        width: 220px;
+    }
+
+    .contact-content input {
+        font-size: 10px;
+    }
+
+    .contact-content textarea {
+        font-size: 10px;
+    }
+
+
+    .content-limiter {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+}
+
+

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blaubeer-Muffins - Kochwelt-342</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo_small.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
+    <header class="content-limiter">
+        <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+        <nav>
+            <a class="navigation-bar" id="start" href="./index.html">Start </a>
+            <a class="navigation-bar" href="./nudelauflauf.html">Rezept des Tages </a>
+            <a class="navigation-bar" href="./contact.html">Kontakt </a>
+            <a class="navigation-bar" href="./impressum.html">Impressum </a>
+            <button id="menu-button" onclick="toggleRespMenu()"><img id="burger-bar" src="./img/burger-bar.png"
+                    alt="burger-bar"></button>
+        </nav>
+    </header>
+
+
+    <main id="main" class="content-limiter" tabindex="-1">
+        <div id="menu" class="resp-menu">
+            <a href="./index.html">Start </a>
+            <a href="./nudelauflauf.html">Rezept des Tages </a>
+            <a href="./contact.html">Kontakt </a>
+            <a href="./impressum.html">Impressum </a>
+        </div>
+        <!-- Rezept + Bild + Icons -->
+        <section class="rezept-section">
+
+
+            <h1 class="rezept-titel">Blaubeer-Muffins</h1>
+
+            <img class="rezept-bild" src="./img/blueberry-muffins.webp" alt="Foto mit Blaubeer Muffins">
+
+            <div class="icons">
+
+                <div class="icons-container">
+                    <img src="./img/icons/clock-regular.svg" alt="Zeit">
+                    <span>25 Min.</span>
+                </div>
+
+                <div class="icons-container">
+                    <img src="./img/icons/brain-solid.svg" alt="Schwierigkeitsgrad">
+                    <span>simpel</span>
+                </div>
+
+                <div class="icons-container">
+                    <img src="./img/icons/calendar-alt-regular.svg" alt="Datum">
+                    <span>04.09.2024</span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Zutaten pro Portion + Nährwertetabelle  -->
+        <section class="table-container">
+            <hr class="horizontal-ruler">
+            <div class="portionen-container">
+                <form>
+                    <label for="inputfield"> Zutaten für
+                    <input id="inputfield" type="number" value="1" required min="1" max="20"></label>
+                    <button class="green-button" onclick="calc('MUFFIN', event)">Portionen</button>
+                </form>
+            </div>
+
+            <table>
+                <tbody>
+                <tr>
+                    <td>250</td>
+                    <td>g Mehl</td>
+                </tr>
+                <tr>
+                    <td>150</td>
+                    <td>g Zucker</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>TL Backpulver</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Prise Salz</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Ei (er)</td>
+                </tr>
+                <tr>
+                    <td>100</td>
+                    <td>ml Milch</td>
+                </tr>
+                <tr>
+                    <td>80</td>
+                    <td>ml Olivenöl</td>
+                </tr>
+                <tr>
+                    <td>1 </td>
+                    <td>TL Vanilleextrakt</td>
+                </tr>
+                <tr>
+                    <td>200</td>
+                    <td>g frische oder gefrorene Blaubeeren</td>
+                </tr>
+            </tbody>
+            </table>
+        </section>
+
+        <section class="naehrwert-container">
+            <h3>Nährwerte für die gewählte Anzahl an Portionen</h3>
+            <hr class="horizontal-ruler" id="mediaquery-column">
+            <div class="naehrwert-area">
+                <div class="naehrwert-paar">
+                    <b>Brennwert</b>
+                    <div class="nutritional-value"><span>1427,4</span> kcal</div>
+                </div>
+                <hr class="vertikaler-trenner">
+                <div class="naehrwert-paar">
+                    <b>Eiweiß</b>
+                    <div class="nutritional-value"><span>48,9</span> g</div>
+                </div>
+                <hr class="vertikaler-trenner">
+                <div class="naehrwert-paar">
+                    <b>Fett</b>
+                    <div class="nutritional-value"><span>62,6</span> g</div>
+                </div>
+                <hr class="vertikaler-trenner">
+                <div class="naehrwert-paar">
+                    <b>Kohlenhydrate</b>
+                    <div class="nutritional-value"><span>157</span> g</div>
+                </div>
+            </div>
+            <hr class="horizontal-ruler">
+        </section>
+
+        <!-- Zubereitung -->
+        <section class="zubereitung-container">
+            <h2>Zubereitung</h2>
+
+            <div class="icons">
+                <div class="icons-container">
+                    <img src="./img/icons/clock-regular.svg" alt="Zeit"><span> ca. 25 Minuten</span>
+                </div>
+
+                <div class="icons-container">
+                    <img src="./img/icons/clock-regular.svg" alt="Zeit"><span> Gesamtzeit ca. 40 Minuten</span>
+                </div>
+            </div>
+
+            <p>
+                <br>
+                1. Ofen auf 180 °C vorheizen und eine Muffinform einfetten oder mit Papierförmchen auslegen. <br>
+                <br>
+                2. Mehl, Zucker, Backpulver und Salz in einer großen Schüssel vermengen.<br>
+                <br>
+                3. In einer separaten Schüssel das Ei mit Milch, Öl und Vanilleextrakt verquirlen.<br>
+                <br>
+                4. Die feuchten Zutaten zu den trockenen geben und kurz vermengen, bis gerade so ein Teig entsteht. Die
+                Blaubeeren vorsichtig unterheben.<br>
+                <br>
+                5. Den Teig in die Muffinformen füllen und ca. 20-25 Minuten backen, bis die Muffins goldbraun sind und
+                ein
+                Zahnstocher sauber herauskommt. <br>
+                <br>
+            </p>
+
+            <h3>Rezept erstellt von</h3>
+
+            <br>
+            <div class="profile">
+                <img src="./img/profile-martin.webp" alt="Profil-Bild">Martin
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+
+    <footer class="content-limiter">
+
+        <img src="./img/white_logo.png" alt="Kochwelt Logo">
+        <div class="socialmedia">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="./img/instagram_icon.webp" alt="Instagram"></a>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="./img/facebook_icon.webp" alt="Facebook"></a>
+
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="./img/youtube.webp" alt="Youtube"></a>
+        </div>
+
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
